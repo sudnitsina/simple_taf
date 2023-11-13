@@ -18,8 +18,7 @@ class LoginPage(BasePage):
         self.driver.find_element(By.CSS_SELECTOR, "input[type='submit']").click()
 
     def login(self, name, password):
-        self.open("/admin")
+        self.open("/login")
         self.fill_username(name)
         self.fill_password(password)
         self.click_login_btn()
-        pass
